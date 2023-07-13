@@ -11,9 +11,8 @@ import { useNavigate } from "react-router-dom";
 const EditForm = (props) => {
   const navigate = useNavigate();
   const {title, description, price, image} = props.product[0]
-  console.log(title)
   const id = props.id
-  const { form, onChange, clear } = useForm({ title: `${title}`, description: "", price: "", image: "" });
+  const { form, onChange, clear } = useForm({ title: `${title}`, description: `${description}`, price: `${price}`, image: `${image}` });
 
   const onSubmitForm = (event) => {
     event.preventDefault();

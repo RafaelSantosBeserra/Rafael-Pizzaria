@@ -16,6 +16,8 @@ export const CardProductsContainer = styled.div`
 export const OneComponent = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
 `;
 
 export const ImageProduct = styled.img`
