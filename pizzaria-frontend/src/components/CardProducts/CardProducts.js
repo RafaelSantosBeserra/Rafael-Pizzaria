@@ -9,7 +9,7 @@ import {
 import add from "../../assents/add1.png";
 
 function CardProducts(props) {
-  const { title, description, image } = props.product;
+  const { title, description, image, price } = props.product;
 
   return (
     <CardProductsContainer>
@@ -17,6 +17,8 @@ function CardProducts(props) {
         <OneComponent>
           <ImageProduct src={image} alt={title} />
           <h1>{title}</h1>
+
+          <p>R$:{price},00</p>
         </OneComponent>
 
         <AddContainer>
